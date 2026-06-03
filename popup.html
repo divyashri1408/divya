@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Alert</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #ff3333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .warning-container {
+            border: 2px solid #ff3333;
+            padding: 40px;
+            background-color: #141414;
+            box-shadow: 0 0 20px rgba(255, 51, 51, 0.5);
+            border-radius: 8px;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #cccccc;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="warning-container">
+        <h1>System Compromised</h1>
+        <p>This is a simulated security warning page. Please close this tab to return to safety.</p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            alert("You are hacked!");
+        };
+    </script>
+
+</body>
+</html>
